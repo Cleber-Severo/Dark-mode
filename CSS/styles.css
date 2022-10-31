@@ -1,0 +1,61 @@
+/* Setting global values, colors and fonts*/
+:root {
+    /*Primary*/
+
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+
+    /*Dark theme*/
+    
+    --darkMode-bg: hsl(230, 17%, 14%);
+    --darkMode-bgTop: hsl(232, 19%, 15%);
+    --darkMode-Card-BG-blue: hsl(228, 28%, 20%);
+    --darkMode-Text: hsl(228, 34%, 66%);
+    --darkMode-whiteText: hsl(0, 0%, 100%);
+
+    /*Light theme*/
+    --lightMode-bg: hsl(0, 0%, 100%);
+    --lightMode-bgTop: hsl(225, 100%, 98%);
+    --lightMode-cardBg-grayishBlue: hsl(227, 47%, 96%);
+    --lightMode-textGrayish: hsl(228, 12%, 44%);
+    --lightMode-VeryDark-text: hsl(230, 17%, 14%);
+
+    --main-font: 'Inter', sans-serif; 
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+
+    color: var(--darkMode-Text);
+
+    background-color: var(--darkMode-bg);
+}
+
+.top__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
+
+.container__info--title {
+    color: var(--darkMode-whiteText);
+}
+
+.toggle__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toggle__container span {
+    font-weight: 700;
+}

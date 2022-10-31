@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="40x40" href="./images/buutton.png">
+
+
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/normalize.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./CSS/styles.css">
   <link rel="stylesheet" href="./CSS/toggleBtn.css">
   <title>Dark-mode</title>
@@ -83,11 +91,22 @@
   -->
 <main class="principal">
 
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
+  
 
+  <div class="top__container">
+    <div class="container__info">
+      <h1 class="container__info--title">Social Media Dashboard</h1>
+      <p class="container__info--followers">Total followers: 23,004</p>
+    </div>
+
+    <div class="toggle__container">
+      <span class="toggle__container--text">Dark mode</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
 </main>
 
 </body>
