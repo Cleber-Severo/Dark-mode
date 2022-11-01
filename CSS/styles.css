@@ -7,7 +7,7 @@
 
     --Facebook: hsl(208, 92%, 53%);
     --Twitter: hsl(203, 89%, 53%);
-    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --YouTube: hsl(348, 97%, 39%);
 
     /*Dark theme*/
@@ -36,14 +36,29 @@ body {
     color: var(--darkMode-Text);
 
     background-color: var(--darkMode-bg);
+
+
+}
+/*-----------------------------------------------------*/
+
+/* --Setting the page top layout styles-- */
+
+.align {
+    padding: 0 100px;
 }
 
 .top__container {
+    background-color: var(--darkMode-bgTop);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
 }
 
 .container__info--title {
@@ -58,4 +73,87 @@ body {
 
 .toggle__container span {
     font-weight: 700;
+}
+
+/*----------------------------------------------------*/
+
+
+/* --Setting the cards layout styles-- */
+
+.followers {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+
+    z-index: 1;
+
+    margin-top: -4rem;
+}
+
+.followers__card {
+    
+    background-color: var(--darkMode-Card-BG-blue);
+    
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    width: 100%;
+    height: 10rem;
+
+}
+
+.followers__card:nth-of-type(1), .followers__card:nth-of-type(2) {
+        border-top:4px solid var(--Facebook);
+}
+
+.followers__card:nth-of-type(3) {
+        border-top: 4px solid transparent;
+        border-image: var(--Instagram);
+        border-image-slice: 1;
+        border-radius: 8px;
+}
+
+.followers__card:nth-of-type(4) {
+        border-top: 4px solid var(--YouTube);
+}
+
+.card__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: .4rem;
+}
+
+.card__number {
+    color: var(--darkMode-whiteText);
+    font-size: 3rem;
+    margin-top: .6rem;
+    margin-bottom: .2rem;
+}
+
+.card__description {
+    letter-spacing: 2px;
+
+    margin-bottom: .4rem;
+}
+
+.card__interactions--number, .card__intecations--day {
+    color: var(--Lime-Green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.red_text {
+    color: var(--Bright-Red);
+}
+.card__interactions--icon {
+   padding: 5px auto;
 }
