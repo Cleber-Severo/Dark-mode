@@ -154,6 +154,3 @@ body {
 .red_text {
     color: var(--Bright-Red);
 }
-.card__interactions--icon {
-   padding: 5px auto;
-}
