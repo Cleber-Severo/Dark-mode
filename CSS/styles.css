@@ -57,12 +57,16 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 1rem;
+    padding-top: .1rem;
     padding-bottom: 6rem;
 }
 
 .container__info--title {
     color: var(--darkMode-whiteText);
+}
+
+.container__info--followers {
+    margin-top: -1rem;
 }
 
 .toggle__container {
@@ -89,7 +93,7 @@ body {
 
     z-index: 1;
 
-    margin-top: -4rem;
+    margin-top: -5rem;
 }
 
 .followers__card {
@@ -106,8 +110,13 @@ body {
     padding: 1rem;
 
     width: 100%;
-    height: 10rem;
+    height: 12rem;
 
+}
+
+.followers__card:hover, .overview-card:hover {
+    background-color: hsl(228, 28%, 40%);
+    cursor: pointer;
 }
 
 .followers__card:nth-of-type(1), .followers__card:nth-of-type(2) {
@@ -124,7 +133,7 @@ body {
 .followers__card:nth-of-type(3)::before {
   content: "";
   position: relative;
-  top: -18px;
+  top: -34px;
   border-radius: 2px 2px 0 0; 
   width: 112%;
   padding: 2px; 
@@ -132,6 +141,11 @@ body {
   -webkit-mask: 
      linear-gradient(#fff 0 0) content-box, 
      linear-gradient(#fff 0 0);
+
+     mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);;
+
   -webkit-mask-composite: xor;
           mask-composite: exclude; 
 }
@@ -182,22 +196,27 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.overview h2 {
+    margin-top: 2rem;
+}
+
 .overview-card {
     background-color: var(--darkMode-Card-BG-blue);
 
     border-radius: 8px;
 
     display: grid;
-
+    column-gap: 1rem;
+    row-gap: .6rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
     align-items: center;
     justify-items: center;
 
-    padding: .6rem;
-
-    height: 6rem;
+    padding: .5rem;
+    margin: 0;
+    height: 7rem;
 }
 
 .overview-card div {
@@ -222,6 +241,11 @@ body {
     grid-column: 4;
 }
 
+.overview-card__category, .overview-card__img, .overview-card__number, .overview-card div {
+    margin: 0;
+    padding: 0;
+}
+
 .overview-card__category {
     font-weight: 700;
 }
@@ -229,4 +253,10 @@ body {
 .overview-card__number {
     font-size: 32px;
     color: white;
+
+    align-self: flex-start;
+}
+
+.overview-card__img {
+    align-self: flex-end;
 }
