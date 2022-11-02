@@ -37,7 +37,19 @@ body {
 
     background-color: var(--darkMode-bg);
 
+}
 
+.dark {
+    color: var(--darkMode-Text);
+    background-color: var(--lightMode-bg);
+}
+
+.dark h1, .dark h2, .dark h3  {
+    color: #000000;
+}
+
+.mudaCor {
+    background-color: blue;
 }
 /*-----------------------------------------------------*/
 

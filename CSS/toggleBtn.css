@@ -35,16 +35,11 @@
   transition: .4s;
 }
 
-input:checked + .slider {
-    
-    background: #ccc;
-}
 
 input:checked + .slider::before {
     transform: translateX(26px);
     background-color: #ffffff;
 }
-
 
 .slider.round {
   border-radius: 34px;
@@ -56,4 +51,8 @@ input:checked + .slider::before {
 
 .toggle__container {
   transform: scale(.8);
+}
+
+.toggle__container--text {
+  color: #ffffff;
 }
