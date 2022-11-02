@@ -1,7 +1,8 @@
 const darkToggle = document.getElementById('darkToggle')
 const topContainer = document.querySelector('.top__container')
+const darkMode_txt = document.querySelector('.toggle__container--text')
 
-//const x = document.querySelectorAll('.followers__card') 
+
 const cards = document.getElementsByTagName('article')
 
 var counter = 0
@@ -34,11 +35,15 @@ darkToggle.addEventListener('click', ()=> {
     if(darkToggle.checked) {
         document.body.classList.add("dark");
         topContainer.style.backgroundColor = 'var(--lightMode-bgTop)'
+        darkMode_txt.style.color = 'var(--darkMode-text)'
+        
         cardlight()
    
     } else {
         document.body.classList.remove("dark");
         topContainer.style.backgroundColor = 'var(--darkMode-bgTop)'
+        darkMode_txt.style.color = 'white'
+
         cardDark()
     }
 
