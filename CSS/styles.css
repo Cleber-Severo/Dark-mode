@@ -129,7 +129,7 @@ body {
 }
 
 .followers__card:hover, .overview-card:hover {
-    background-color: hsl(228, 28%, 40%);
+    background-color: hsl(228, 28%, 40%) !important;
     cursor: pointer;
 }
 
