@@ -4,13 +4,19 @@ const darkMode_txt = document.querySelector('.toggle__container--text')
 
 
 const cards = document.getElementsByTagName('article')
+const cardsFollowers = document.querySelectorAll(".followers__card")
+const cardsOverview = document.querySelectorAll(".overview-card")
 
+var counter = 0
 var counter = 0
 
 function cardlight(){
 
     while (counter <= 11) {
         cards[counter].style.backgroundColor = 'var(--lightMode-cardBg-grayishBlue)'
+        cards[counter].classList.add('cardLight-bg')
+        cards[counter].classList.remove('cardDark-bg')
+
         counter++
         }
 
@@ -21,7 +27,10 @@ function cardlight(){
 function cardDark(){
 
     while (counter <= 11) {
-         cards[counter].style.backgroundColor = 'var(--darkMode-Card-BG-blue)'
+        cards[counter].style.backgroundColor = 'var(--darkMode-Card-BG-blue)'
+        cards[counter].classList.add('cardDark-bg')
+        cards[counter].classList.remove('cardLight-bg')
+
         counter++
         }
 
@@ -37,41 +46,16 @@ darkToggle.addEventListener('click', ()=> {
         topContainer.style.backgroundColor = 'var(--lightMode-bgTop)'
         darkMode_txt.style.color = 'var(--darkMode-text)'
         
-        cardlight()
+        cardlight() //cards changes for light-mode
    
     } else {
         document.body.classList.remove("dark");
         topContainer.style.backgroundColor = 'var(--darkMode-bgTop)'
         darkMode_txt.style.color = 'white'
 
-        cardDark()
+        cardDark() //cards changes for dark-mode
+   
     }
 
 })
 
-/*
-darkToggle.addEventListener('click', ()=> {
-
-    if(darkToggle.checked) {
-        document.body.style.backgroundColor = 'var(--lightMode-bg)'
-        document.querySelector('.top__container').style.backgroundColor = 'var(--lightMode-bgTop)'
-        document.getElementsByTagName("h2").style.color = 'var(--darkMode-text)'
-
-        document.querySelector('.toggle__container--text').style.color = 'var(--darkMode-text)'
-    } else {
-        document.body.style.backgroundColor = 'var(--darkMode-bg)'
-        document.querySelector('.top__container').style.backgroundColor = 'var(--darkMode-bg)'
-         document.querySelector('.toggle__container--text').style.color = 'white'
-    }
-
-})
-
-*/ 
-
-/*
-toggle.addEventListener('click', ()=> {
-
-    document.body.style.backgroundColor = 'white'
-    document.querySelector('.top__container').style.backgroundColor = 'white'
-    
-}) */
