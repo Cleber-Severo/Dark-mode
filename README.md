@@ -18,12 +18,7 @@ There is a single button that at being pressed changes the whole apperance of th
 
  **Light page**<br>
  <img width=50% textAlign="center" src="./assets/images/screenshots/lightMode.png" alt="Initial screen">
- 
- **responsive**<br>
- <img width=50% src="./assets/images/screenshots/responsive__darkMode.png" alt="Interactions">
- <img width=50% src="./assets/images/screenshots/responsive__lightMode.png" alt="Interactions">
-   
 
 **Responsive**<br>
-  <img height=500 width=30% margin-right=28px src="./assets/images/screenshots/responsive__darkMode.png" alt="error messages">
+  <img height=500 width=30% margin-right=32px src="./assets/images/screenshots/responsive__darkMode.png" alt="error messages">
   <img height=500 width=30% src="./assets/images/screenshots/responsive__lightMode.png" alt="error messages">
