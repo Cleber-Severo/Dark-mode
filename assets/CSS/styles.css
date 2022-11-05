@@ -133,6 +133,11 @@ body {
     cursor: pointer;
 }
 
+.followers__card:active, .overview-card:active {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
 /*-----------------------------------------------------------------------------*/
 /* Solution for hover effect with javascript theme toggle*/
 
@@ -291,6 +296,11 @@ body {
     align-self: flex-end;
 }
 
+/* Atribuitions */
+.attribution {
+    text-align: center;
+    margin-top: 1rem;
+}
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
