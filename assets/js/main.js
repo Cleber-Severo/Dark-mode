@@ -1,3 +1,4 @@
+//Adding global variables
 const darkToggle = document.getElementById('darkToggle')
 const topContainer = document.querySelector('.top__container')
 const darkMode_txt = document.querySelector('.toggle__container--text')
@@ -10,12 +11,13 @@ const cardsOverview = document.querySelectorAll(".overview-card")
 var counter = 0
 var counter = 0
 
+//This function changes the card background for light mode 
 function cardlight(){
 
     while (counter <= 11) {
         cards[counter].style.backgroundColor = 'var(--lightMode-cardBg-grayishBlue)'
-        cards[counter].classList.add('cardLight-bg')
-        cards[counter].classList.remove('cardDark-bg')
+        cards[counter].classList.add('cardLight-bg') //add ligh-mode hover card state
+        cards[counter].classList.remove('cardDark-bg') //remove dark-mode hover card state
 
         counter++
         }
@@ -24,12 +26,13 @@ function cardlight(){
 
 }
 
+//This function changes the card background for dark mode 
 function cardDark(){
 
     while (counter <= 11) {
         cards[counter].style.backgroundColor = 'var(--darkMode-Card-BG-blue)'
-        cards[counter].classList.add('cardDark-bg')
-        cards[counter].classList.remove('cardLight-bg')
+        cards[counter].classList.add('cardDark-bg') //add dark-mode hover card state
+        cards[counter].classList.remove('cardLight-bg') //remove ligh-mode hover card state
 
         counter++
         }
@@ -38,9 +41,10 @@ function cardDark(){
 
 }
 
-
+//Starts this function by clicking on toggle button
 darkToggle.addEventListener('click', ()=> {
 
+    //checks input status
     if(darkToggle.checked) {
         document.body.classList.add("dark");
         topContainer.style.backgroundColor = 'var(--lightMode-bgTop)'

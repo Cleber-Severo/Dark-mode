@@ -301,6 +301,8 @@ body {
     text-align: center;
     margin-top: 1rem;
 }
+
+/* responsive */
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -310,7 +312,7 @@ body {
         padding: 0 60px;
     }
     .top__container, .followers{
-        flex-direction: column;
+        flex-direction: column; /* sets the section to a column orientation for better mobile view*/
     }
 
 

@@ -13,13 +13,13 @@ There is a single button that at being pressed changes the whole apperance of th
 
 ## Project design
 
-**Dark page**<br><br>
+**Dark page**<br><margin-bottom:10px>
 
  <img width=50% textAlign="center" src="./assets/images/screenshots/darkMode.png" alt="Initial screen">
 
- **Light page**<br><br>
+ **Light page**<br><margin-bottom:10px>
  <img width=50% textAlign="center" src="./assets/images/screenshots/lightMode.png" alt="Initial screen">
 
-**Responsive**<br><br>
+**Responsive**<br><margin-bottom:10px>
   <img height=500 width=30% margin-right=32px src="./assets/images/screenshots/responsive__darkMode.png" alt="error messages">
   <img height=500 width=30% src="./assets/images/screenshots/responsive__lightMode.png" alt="error messages">
